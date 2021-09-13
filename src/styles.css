@@ -3,7 +3,7 @@
   --primary-color: #bfdbfe;
   --secondary-color: #3b82f6;
   --off-white: #dbeafe;
-  --dark-color: #2563eb;
+  --dark-color: gray;
 }
 
 body {
@@ -80,36 +80,60 @@ body {
 }
 
 .intro-header-text {
-  color: var(--dark-color);
-  font-weight: 900;
+  color: black;
+  font-weight: 400;
   font-style: italic;
   font-size: 15px;
+  max-width: 25rem;
+  margin: auto;
 }
 
 .off-white {
   background-color: var(--off-white);
+  margin: auto;
+  max-width: 25rem;
   padding: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .btn {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: 1.1rem;
-  color: var(--dark-color);
+  color: black;
   margin: 0.5rem;
 }
 
 .btn-secondary {
   border: 1px solid var(--dark-color);
-  background-color: var(--off-white);
+  background-color: var(--secondary-color);
+  color: white;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-void {
+  background-color: white;
+}
+
+.btn-mark {
+  background-color: #059669;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 1rem;
 }
 
 footer {
-  margin: 1rem;
-  padding-top: 1rem;
+  margin: 0.5rem;
+  padding-top: 0.5rem;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: #3b82f6;
+  border-radius: 1rem;
 }
 
 footer ul {
@@ -176,4 +200,3 @@ footer i {
     width: 8rem;
   }
 }
-
